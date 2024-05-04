@@ -53,3 +53,11 @@ body {
 .flash {
     background-color: white !important; /*as above id selector is used to apply flash class i used !important*/
 }
+
+@media (max-width: 380px) {
+    .btn {
+        height: 120px;
+        width: 120px;
+        border: 4px solid black;
+    }
+}
