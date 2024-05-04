@@ -11,6 +11,7 @@ startBtn.addEventListener('click', function() {
     if (started == false) {
         started = true;
         levelUp();
+        gameButtonPress();
     }
 });
 
@@ -59,9 +60,11 @@ function btnPress() {
     checkAns(userSeq.length - 1);
 }
 
-let allBtns = document.querySelectorAll('.btn')
-for (const btn of allBtns) {
-    btn.addEventListener('click', btnPress);
+function gameButtonPress() {
+    let allBtns = document.querySelectorAll('.btn')
+    for (const btn of allBtns) {
+        btn.addEventListener('click', btnPress);
+    }
 }
 
 function resetGame() {
